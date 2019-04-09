@@ -77,7 +77,7 @@ To clean up:
 
 You have to tell the file where your library resides and which library it is using:
 
-`gcc yourtest.c -L. -lft -o yourtest`
+`gcc yourtest.c -L. -lft -o yourtest.out`
 
 -L takes the path to your library. `.` in this case<br>
 -l takes the name of your library. This is the set of characters that come after `lib` in your library name.
