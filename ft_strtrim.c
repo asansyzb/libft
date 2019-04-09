@@ -34,8 +34,6 @@ char	*ft_strtrim(char const *s)
 		return ((void*)0);
 	i = 0;
 	while (l <= len - r)
-	{
 		dest[i++] = s[l++];
-	}
 	return (dest);
 }

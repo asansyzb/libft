@@ -12,7 +12,10 @@
 
 NAME = libft.a
 CFLAGS = -Wall -Werror -Wextra
-SRC += ft_lstadd.c ft_lstdel.c ft_lstiter.c ft_lstdelone.c
+SRC = btree_apply_infix.c btree_apply_prefix.c btree_apply_suffix.c
+SRC += btree_create_node.c btree_insert_data.c btree_level_count.c
+SRC += btree_create_node.c ft_llabs.c ft_labs.c ft_div.c ft_abs.c
+SRC += ft_swap.c ft_lstadd.c ft_lstdel.c ft_lstiter.c ft_lstdelone.c
 SRC += ft_lstmap.c ft_lstnew.c ft_putnbr_fd.c ft_putendl_fd.c ft_putstr_fd.c
 SRC += ft_putchar_fd.c ft_putnbr.c ft_putendl.c ft_putchar.c ft_itoa.c
 SRC += ft_strsplit.c ft_strtrim.c ft_strjoin.c ft_strsub.c ft_strnequ.c
@@ -32,7 +35,7 @@ all: $(NAME)
 
 $(NAME):
 	@gcc $(CFLAGS) -c $(SRC) -I $(HEADER)
-	@ar rc $(NAME) *.o
+	@ar rc $(NAME) ft_*.o
 	@ranlib $(NAME)
 clean:
 	@/bin/rm -f $(OBJECT)
