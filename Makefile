@@ -6,7 +6,7 @@
 #    By: asansyzb <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/10/25 18:01:53 by asansyzb          #+#    #+#              #
-#    Updated: 2018/11/08 22:02:04 by asansyzb         ###   ########.fr        #
+#    Updated: 2019/04/09 00:14:46 by asansyzb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ all: $(NAME)
 
 $(NAME):
 	@gcc $(CFLAGS) -c $(SRC) -I $(HEADER)
-	@ar rc $(NAME) ft_*.o
+	@ar rc $(NAME) *.o
 	@ranlib $(NAME)
 clean:
 	@/bin/rm -f $(OBJECT)
