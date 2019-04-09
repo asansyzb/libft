@@ -15,10 +15,7 @@
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
-<<<<<<< HEAD
 # include <limits.h>
-=======
->>>>>>> 99fa547ee7e245054f5b8fbb8bc7895de20641dc
 
 typedef struct		s_list
 {

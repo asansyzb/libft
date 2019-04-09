@@ -14,10 +14,6 @@
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-<<<<<<< HEAD
-=======
-	size_t		i;
->>>>>>> 99fa547ee7e245054f5b8fbb8bc7895de20641dc
 	char		*cdest;
 	const char	*csrc;
 
@@ -27,10 +23,6 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 		return (ft_memcpy(dest, src, n));
 	else
 	{
-<<<<<<< HEAD
-=======
-		i = -1;
->>>>>>> 99fa547ee7e245054f5b8fbb8bc7895de20641dc
 		while (n)
 		{
 			*(cdest + n - 1) = *(csrc + n - 1);
