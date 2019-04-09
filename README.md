@@ -77,7 +77,11 @@ To clean up:
 
 You have to tell the file where your library resides and which library it is using:
 
+<<<<<<< HEAD
 `gcc yourtest.c -L. -lft -o yourtest`
+=======
+`gcc yourtest.c -L. -lft -o yourtest.out`
+>>>>>>> 99fa547ee7e245054f5b8fbb8bc7895de20641dc
 
 -L takes the path to your library. `.` in this case<br>
 -l takes the name of your library. This is the set of characters that come after `lib` in your library name.

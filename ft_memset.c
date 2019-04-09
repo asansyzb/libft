@@ -20,6 +20,13 @@ void	*ft_memset(void *s, int c, size_t n)
 	i = 0;
 	ptr = (unsigned char *)s;
 	while (i < n)
+<<<<<<< HEAD
 		ptr[i++] = c;
+=======
+	{
+		ptr[i] = c;
+		i++;
+	}
+>>>>>>> 99fa547ee7e245054f5b8fbb8bc7895de20641dc
 	return (s);
 }
